@@ -1,0 +1,29 @@
+andi ingin membeli tumbler ikea seharga 280000, dan jika dia membuat member akan mendapatkan diskon 10%. di tambah jika dia membeli lebih dari sama dengan 250000, dia akan mendapatkan gratis ongkir sebesar 15000. Tapi jika belanjaan andi kurang dari 250000. dia harus membayar 15000.
+
+start
+
+let hargaTumbler = 280000
+let item = 2
+let member = true
+let total = hargaTumbler * item
+let diskon = total * 0.1
+
+SWITCH member
+    CASE TRUE:
+        subtotal = total - diskon
+    DEFAULT:
+        subtotal = total
+
+switch subtotal
+    CASE true
+        subtotal < 250000
+        totalBayar = subtotal + 15000
+    DEFAULT
+	totalBayar = subtotal
+
+display  totalBayar
+END
+
+
+
+	
