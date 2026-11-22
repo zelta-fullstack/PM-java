@@ -7,6 +7,8 @@ const diskon = total * 0.1;
 let subtotal;
 let totalBayar;
 let MSGmember;
+let ValidateIpunt = hargaBarang > 0 && (Number.isInteger(item) && item > 0) ? "input valid" : "input tidak valid"
+
 
 switch (true){
     case member == true:
@@ -32,6 +34,7 @@ switch (true){
         totalBayar = subtotal
     }
 
+    console.log(`------------${ValidateIpunt}--------------`)
  console.log("harga barang -------------------------",hargaBarang)       
  console.log("banyak item yang di beli -------------",item)       
  console.log("total belanjaan ----------------------",total)      

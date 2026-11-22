@@ -2,11 +2,17 @@ andi ingin membeli tumbler ikea seharga 280000, dan jika dia membuat member akan
 
 start
 
-let hargaTumbler = 280000
+let hargaBarang = 280000
 let item = 2
 let member = true
-let total = hargaTumbler * item
+let total = hargaBarang * item
 let diskon = total * 0.1
+
+SWITCH input
+	CASE FALSE:
+	 msgInput = "input tidak valid"
+	DEFAULT 
+	 msgInput = "input valid" 
 
 SWITCH member
     CASE TRUE:
@@ -23,6 +29,13 @@ switch subtotal
 
 display  totalBayar
 END
+
+jadi mulai dari input terus mengecek apakah input bilangan bulat atau tidak 
+jika ya lanjut jika tidak balik lagi ke awal, terus membuat total dari hargaBarang * item
+terus membuat diskon dari total * 0.1 terus masuk ke pengecekan member jika true,
+total - diskon dan dimasukan ke subtotal. jika false tampilkan total dan masukan ke subtotal.
+setalh itu pengecekan subtotal jika kurang dari 250000 maka subtotal + 15000 dan dimasukan ke
+totalBayar jika lebih dari 250000 tampilkan subtotal saja dan masukan ke totalBayar dan end.
 
 
 
