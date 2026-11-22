@@ -1,6 +1,28 @@
+// skenario 1 member (aktif/true) dan dapat gartis ongkir
 
 const hargaBarang = 280000;
 const member = true;
+
+
+// skenario 2 member (tidak aktif /false) dan dapat gratis ongkir
+
+// const hargaBarang = 280000;
+// const member = false;
+
+
+// skenario 3 tidak mendapatkan gratis ongkir tapi member (aktif/true)
+
+// const hargaBarang = 28000;
+// const member = true;
+
+
+// skenario 4 tidak mendapatkan gratis ongkir tapi member (tidak aktif/false)
+
+// const hargaBarang = 22000;
+// const member = false;
+
+
+
 const item = 2;
 const total = hargaBarang * item;
 const diskon = total * 0.1;
